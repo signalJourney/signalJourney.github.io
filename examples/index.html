@@ -34,7 +34,7 @@
 <header class="md-header" data-md-component="header">
 <nav aria-label="Header" class="md-header__inner md-grid">
 <a aria-label="Signal Journey" class="md-header__button md-logo" data-md-component="logo" href=".." title="Signal Journey">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+<img alt="logo" src="../_static/logo.svg"/>
 </a>
 <label class="md-header__button md-icon" for="__drawer">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
@@ -223,7 +223,7 @@
 <nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" data-md-level="0">
 <label class="md-nav__title" for="__drawer">
 <a aria-label="Signal Journey" class="md-nav__button md-logo" data-md-component="logo" href=".." title="Signal Journey">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"></path></svg>
+<img alt="logo" src="../_static/logo.svg"/>
 </a>
     Signal Journey
   </label>
@@ -864,18 +864,18 @@
 - <strong>🔗 Cross-references</strong> to related examples and schemas</p>
 <h3 id="mermaid-diagram-legend">Mermaid Diagram Legend<a class="headerlink" href="#mermaid-diagram-legend" title="Permanent link">¶</a></h3>
 <p>The flowcharts use a consistent color scheme to distinguish different types of elements:</p>
-<pre class="mermaid"><code>flowchart TD
-    A[Processing Step<br/>Function call] --&gt; B[Another Step<br/>Function call]
+<div class="highlight"><pre><span></span><code>flowchart TD
+    A[Processing Step&lt;br/&gt;Function call] --&gt; B[Another Step&lt;br/&gt;Function call]
 
     %% Input and output files  
-    C["📁 input_file.fif<br/>Input data"] --&gt; A
-    B --&gt; D["💾 output_file.fif<br/>Processed data"]
+    C["📁 input_file.fif&lt;br/&gt;Input data"] --&gt; A
+    B --&gt; D["💾 output_file.fif&lt;br/&gt;Processed data"]
 
     %% Inline data (small parameters/values saved in JSON)
-    A --&gt; E["📊 Inline Data<br/>Small parameters/values"]
+    A --&gt; E["📊 Inline Data&lt;br/&gt;Small parameters/values"]
 
     %% Quality metrics
-    B --&gt; F["📈 Quality Metrics<br/>Processing statistics"]
+    B --&gt; F["📈 Quality Metrics&lt;br/&gt;Processing statistics"]
 
     %% Styling
     classDef processStep fill:#e1f5fe,stroke:#01579b,stroke-width:2px
@@ -889,7 +889,7 @@
     class D outputFile
     class E inlineData
     class F qualityMetric
-</code></pre>
+</code></pre></div>
 <p><strong>Legend:</strong>
 - <strong>🔵 Light Blue</strong>: Processing steps (function calls)
 - <strong>🟠 Orange</strong>: Input files 
@@ -958,8 +958,5 @@
 </div>
 <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.indexes", "navigation.top", "search.highlight", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link", "navigation.instant", "navigation.sections", "toc.integrate"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
 <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
-<script type="module">import mermaid from "https://unpkg.com/mermaid@10.6.1/dist/mermaid.esm.min.mjs";
-window.mermaidConfig = {default: {
-    startOnLoad: false
-}};</script></body>
+</body>
 </html>
